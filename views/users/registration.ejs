@@ -1,0 +1,52 @@
+<% include('../layouts/header.ejs') %>
+
+
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/login.css">
+  <div class="parent clearfix">
+    <div class="bg-illustration">
+      <img src="https://cdn.pixabay.com/photo/2016/12/26/18/33/logo-1932539_960_720.png" alt="logo">
+
+
+    </div>
+
+    <div class="login">
+      <div class="container">
+        <h1>Register</h1>
+
+        <br>
+
+        <% if(typeof message !=='undefined' ){ %>
+          <p style="color: green;">
+            <%= message %>
+          </p>
+          <% } %>
+
+            <div class="login-form">
+              <form action="" method="post" enctype="multipart/form-data">
+                <input type="text" name="name" placeholder="Enter Name" required>
+                <input type="text" name="bio" placeholder="Write Bio" required>
+                <input type="text" name="branch" placeholder="Enter Branch" required>
+                <input type="number" name="batch" placeholder="Enter Batch" required>
+                <input type="text" name="insta" placeholder="Enter Insta handle" required>
+                <input type="number" name="roll" placeholder="Enter Roll No" required>
+                <input type="email" name="email" placeholder="Enter Email" required>
+                <input type="number" name="mno" placeholder="Enter Mobile No" required>
+                <input type="file" name="image" required>
+                <input type="password" name="password" placeholder="Enter password"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                <button type="submit" value="Register">Register</button>
+                <br>
+                <span class="registeration">Already a member? &nbsp <a href="/login">Login Here</a></span>
+              </form>
+            </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <% include('../layouts/footer.ejs') %>

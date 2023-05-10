@@ -1,0 +1,435 @@
+/* body{
+  background-color: rgb(237, 217, 217);
+}
+.login-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15%;
+}
+.sub-div{
+  background-color: white;
+  padding: 35px;
+  border-radius: 20px;
+}
+
+.form-heading{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.rememberNforgot{
+  display: flex;
+  justify-content: space-between;
+} */
+
+@font-face {
+    font-family: 'helvetica_ce_55_romanregular';
+    src: url('../fonts/helvetica_neue_ce_55_roman-webfont.eot');
+    src: url('../fonts/helvetica_neue_ce_55_roman-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/helvetica_neue_ce_55_roman-webfont.woff2') format('woff2'), url('../fonts/helvetica_neue_ce_55_roman-webfont.woff') format('woff'), url('../fonts/helvetica_neue_ce_55_roman-webfont.ttf') format('truetype'), url('../fonts/helvetica_neue_ce_55_roman-webfont.svg#helvetica_ce_55_romanregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans-regular-webfont.woff2') format('woff2'), url('../fonts/opensans-regular-webfont.woff') format('woff'), url('../fonts/opensans-regular-webfont.ttf') format('truetype'), url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'helvetica_ce_55_romanregular';
+  
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  body {
+    background-color: white;
+    overflow-x: hidden;
+  }
+  
+  .clearfix::-webkit-scrollbar {
+    display: none;
+  }
+  
+  
+  article,
+  aside,
+  details,
+  figure,
+  footer,
+  header,
+  main,
+  menu,
+  nav,
+  section,
+  summary {
+    display: block;
+  }
+  
+  /* h1{
+    color: white;
+  } */
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a {
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    text-decoration: none;
+    
+  }
+  /* a{
+    color: #e73131;
+  } */
+  
+  img {
+    border: none;
+  }
+  
+  *:focus {
+    outline: none;
+  }
+  
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .bg-illustration {
+    position: relative;
+    height: 100vh;
+    width: 1194px;
+    background: url("images/loginRegister/01.jpg") no-repeat center center scroll;
+    background-size: cover;
+    float: left;
+    -webkit-animation: bgslide 2.3s forwards;
+    animation: bgslide 2.3s forwards;
+  }
+  
+  .bg-illustration img {
+    width: 248px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: auto;
+    margin: 19px 0 0 25px;
+  }
+  
+  @-webkit-keyframes bgslide {
+    from {
+      left: -100%;
+      width: 0;
+      opacity: 0;
+    }
+  
+    to {
+      left: 0;
+      width: 1194px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bgslide {
+    from {
+      left: -100%;
+      width: 0;
+      opacity: 0;
+    }
+  
+    to {
+      left: 0;
+      width: 1194px;
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  .login {
+    max-height: 100vh;
+    overflow-Y: auto;
+    float: right;
+    margin-top: 0 auto;
+    width: calc(100% - 1194px);
+  }
+  
+  .login .container {
+    width: 505px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .login .container h1 {
+    margin-top: 30px;
+    margin-bottom: -20px;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  
+  .login .container .login-form {
+    margin-top: 25px;
+  }
+  
+  .login .container .login-form form {
+    display: -ms-grid;
+    display: grid;
+  }
+  
+  .login .container .login-form form input {
+    font-size: 16px;
+    font-weight: normal;
+    background: rgb(215, 215, 215);
+    margin: 12.5px 0;
+    height: 68px;
+    border: none;
+    padding: 10 30px;
+    border-radius: 10px;
+  }
+  
+  .login .container .login-form form button[type=submit] {
+    background: -webkit-linear-gradient(110deg, #e73131 0%, #cd5252 100%);
+    background: -o-linear-gradient(110deg, #e73131 0%, #cd5252 100%);
+    background: linear-gradient(-20deg, #e73131 0%, #cd5252 100%);
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 241px;
+    height: 58px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .login .container .login-form form button[type=submit]:hover::after {
+    opacity: 1;
+  }
+  
+  .login .container .login-form form button[type=submit]::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border-radius: 10px;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    right: 0;
+    bottom: 0;
+    background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(#515151));
+    background: -webkit-linear-gradient(bottom, #000000 0%, #515151 100%);
+    background: -o-linear-gradient(bottom, #000000 0%, #515151 100%);
+    background: linear-gradient(to top, #000000 0%, #515151 100%);
+  }
+  
+  
+  
+  /* .login .container .registeration {
+    position: absolute;
+    right: 0;
+    margin-top: 0px;
+  } */
+  .login .container .registeration{
+    background-color: rgb(15, 14, 14);
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    
+  }
+  .login .container .registeration a {
+    font-size: 16px;
+    position: relative;
+    font-weight: normal;
+    color: white;
+    
+  }
+
+  /* .login-form  a{
+    background-color: rgb(15, 14, 14);
+    margin-bottom: 10%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    color: #e73131;
+  } */
+  
+  .login .container .registeration a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    border-radius: 100px;
+    background: -webkit-linear-gradient(110deg, #f794a4 0%, #fdd6bd 100%);
+    background: -o-linear-gradient(110deg, #f794a4 0%, #fdd6bd 100%);
+    background: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);
+    bottom: -4px;
+    left: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+    right: 0;
+  }
+  
+  .login .container .registeration a:hover::after {
+    opacity: 1;
+  }
+  
+  @media only screen and (min-width: 1024px) and (max-width: 1680px) {
+    .bg-illustration {
+      width: 50%;
+      -webkit-animation: none;
+      animation: none;
+    }
+  
+    .login {
+      width: 50%;
+    }
+  }
+  
+  /* Display 12", iPad PRO Portrait, iPad landscape */
+  @media only screen and (max-width: 1024px) {
+    body {
+      overflow-x: hidden;
+    }
+  
+    @-webkit-keyframes slideIn {
+      from {
+        left: -100%;
+        opacity: 0;
+      }
+  
+      to {
+        left: 0;
+        opacity: 1;
+      }
+    }
+  
+    @keyframes slideIn {
+      from {
+        left: -100%;
+        opacity: 0;
+      }
+  
+      to {
+        left: 0;
+        opacity: 1;
+      }
+    }
+  
+    .bg-illustration {
+      float: none;
+      background: url("https://i.ibb.co/rwncw7s/bg-mobile.png") center center;
+      background-size: cover;
+      -webkit-animation: slideIn 0.8s ease-in-out forwards;
+      animation: slideIn 0.8s ease-in-out forwards;
+      width: 100%;
+      height: 190px;
+      text-align: center;
+    }
+  
+    .bg-illustration img {
+      width: 100px;
+      height: auto;
+      margin: 20px auto !important;
+      text-align: center;
+    }
+  
+    .bg-illustration .burger-btn {
+      left: 33px;
+      top: 29px;
+      display: block;
+      position: absolute;
+    }
+  
+    .bg-illustration .burger-btn span {
+      display: block;
+      height: 4px;
+      margin: 6px;
+      background-color: #fff;
+    }
+  
+    .bg-illustration .burger-btn span:nth-child(1) {
+      width: 37px;
+    }
+  
+    .bg-illustration .burger-btn span:nth-child(2) {
+      width: 28px;
+    }
+  
+    .bg-illustration .burger-btn span:nth-child(3) {
+      width: 20px;
+    }
+  
+    .login {
+      float: none;
+      margin: 0 auto;
+      width: 100%;
+    }
+  
+    .login .container {
+      -webkit-animation: slideIn 0.8s ease-in-out forwards;
+      animation: slideIn 0.8s ease-in-out forwards;
+      width: 85%;
+      float: none;
+    }
+  
+    .login .container h1 {
+      font-size: 25px;
+      margin-top: 40px;
+    }
+  
+    .login .container .login-form {
+      margin-top: 25px;
+    }
+  
+    .login .container .login-form form input {
+      height: 45px;
+    }
+  
+    .login .container .login-form form button[type=submit] {
+      height: 45px;
+      margin-top: 20px;
+    }
+  
+  
+  
+  .input-1 {
+    display: none;
+  }
+  
+  .form-1 {
+    margin-top: -40px;
+  }
+  
+  .parent {
+    margin-top: -20px;
+    z-index: 1;
+  }
+  
+}

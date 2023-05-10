@@ -1,0 +1,58 @@
+
+
+<% include('../layouts/header.ejs') %> 
+
+<!-- Style -->
+<link rel="stylesheet" href="css/clubRegister.css">
+<div class="parent clearfix">
+    <div class="bg-illustration">
+      <img src="https://cdn.pixabay.com/photo/2016/12/26/18/33/logo-1932539_960_720.png" alt="logo">
+
+
+    </div>
+    
+    <div class="login">
+      <div class="container">
+        <h1>Club Registration</h1>
+        
+        <br>
+
+        <% 
+        if(typeof message !== 'undefined'){
+          %>
+            <p style="color: green;">
+              <%= message %>
+            </p>
+          <%
+        }
+      %> 
+      
+        <div class="login-form">
+          <form action=""  method="post" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Enter Name" required>
+            <input type="text" name="clubname" placeholder="Enter Club Name" required>
+            <input type="text" name="insta" placeholder="Enter Insta handle" required>
+            <input type="text" name="branch" placeholder="Enter Branch" required>
+            <input type="number" name="batch" placeholder="Enter Batch" required>
+            <input type="number" name="roll" placeholder="Enter Roll No" required>
+            <input type="email" name="email" placeholder="Enter Email" required>
+            <input type="number" name="mno" placeholder="Enter Mobile No" required>
+            <br>
+            Upload screenshot of payment done
+            <input type="file" id="input-username" class="form-control form-control-alternative" name="image" >
+            
+            <button type="submit" value="Register">Register</button>
+
+            <span class="registeration" style="background-color: white;">See Registered students list <a href="/clubRegisterList" style="color: #e73131; background-color: white;">here</a></span>
+            
+          </form>
+        </div>
+    
+      </div>
+      </div>
+  </div>
+
+
+  
+
+<% include('../layouts/footer.ejs') %> 

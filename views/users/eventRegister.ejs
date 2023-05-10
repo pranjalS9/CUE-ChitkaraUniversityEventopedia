@@ -1,0 +1,50 @@
+
+
+<% include('../layouts/header.ejs') %> 
+
+<!-- Style -->
+<link rel="stylesheet" href="css/login.css">
+<div class="parent clearfix">
+    <div class="bg-illustration">
+      <img src="https://i.ibb.co/Pcg0Pk1/logo.png" alt="logo">
+
+
+    </div>
+    
+    <div class="login">
+      <div class="container">
+        <h1>Event Registration</h1>
+        
+        <br>
+
+        <% 
+        if(typeof message !== 'undefined'){
+          %>
+            <p style="color: green;">
+              <%= message %>
+            </p>
+          <%
+        }
+      %> 
+      
+        <div class="login-form">
+          <form action=""  method="post">
+            <input type="text" name="name" placeholder="Enter Name" required>
+            <input type="text" name="insta" placeholder="Enter Insta handle" required>
+            <input type="number" name="roll" placeholder="Enter Roll No" required>
+            <input type="email" name="email" placeholder="Enter Email" required>
+            <input type="number" name="mno" placeholder="Enter Mobile No" required>
+            <button type="submit" value="Register">Register</button>
+            
+            <span class="registeration">See Registered students list <a href="/eventRegisterList" style="color: #e73131;">here</a></span>
+          </form>
+        </div>
+    
+      </div>
+      </div>
+  </div>
+
+
+  
+
+<% include('../layouts/footer.ejs') %> 

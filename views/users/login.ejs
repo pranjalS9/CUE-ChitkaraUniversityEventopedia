@@ -1,0 +1,50 @@
+<% include('../layouts/header.ejs') %> 
+
+<% 
+                if(typeof message !== 'undefined'){
+                    %>
+                        <h4><%= message %></h4>
+                    <%
+                }
+            %> 
+
+<!-- Style -->
+<link rel="stylesheet" href="css/login.css">
+<div class="parent clearfix">
+    <div class="bg-illustration">
+      
+
+
+    </div>
+    
+    <div class="login">
+      <div class="container">
+        <h1>Login</h1>
+    
+        <div class="login-form">
+          <form action="/login" method="post">
+            <input type="email" name="email" required placeholder="E-mail Address">
+            <input type="password" name="password" required placeholder="Password">
+
+            <div class="rememberNforgot">
+                <div class="remember-form">
+                    <input type="checkbox">
+                    <span>Remember me</span>
+                </div>
+                <div class="forget-pass">
+                    <a href="/forget">Forgot Password ?</a>
+                </div>
+            </div>
+
+            <button type="submit">LOG IN</button>
+            <br>
+            <span class="registeration">New User? &nbsp <a href="/register">Register Here</a></span>
+          </form>
+        </div>
+    
+      </div>
+      </div>
+  </div>
+<!--verification-->
+
+<% include('../layouts/footer.ejs') %> 

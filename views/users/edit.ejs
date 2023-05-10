@@ -1,0 +1,163 @@
+<% include('../layouts/header.ejs') %> 
+
+<link rel="stylesheet" href="css/user-profile.css">
+
+<!-- <img src="userImages/<%= user.image %>" width="100px" height="100px" alt="<%= user.image %>">
+
+<form action="" method="POST" enctype="multipart/form-data">
+
+    <input type="file" name="image">
+    <input type="hidden" name="user_id" value="<%= user.id %>">
+    <br><br>
+    <input type="text" name="name" value="<%= user.name %>" placeholder="Enter Name" required>
+    <br><br>
+    <input type="textarea" name="bio" value="<%= user.bio %>" placeholder="Write bio" required>
+    <br><br>
+    <input type="text" name="branch" value="<%= user.branch %>" placeholder="Enter Branch" required>
+    <br><br>
+    <input type="number" name="batch" value="<%= user.batch %>" placeholder="Enter Batch" required>
+    <br><br>
+    <input type="text" name="insta" value="<%= user.insta %>" placeholder="Enter Insta Handle" required>
+    <br><br>
+    <input type="number" name="roll" value="<%= user.roll %>" placeholder="Enter Roll No" required>
+    <br><br>
+    <input type="email" name="email" value="<%= user.email %>" placeholder="Enter Email" required>
+    <br><br>
+    <input type="number" name="mno" value="<%= user.mobile %>" placeholder="Enter Mobile" required>
+    <br><br>
+    <input type="submit" value="Update Profile">
+
+</form> -->
+
+<div class="col-xl-8 order-xl-1">
+    <div class="card bg-secondary shadow">
+      <div class="card-header bg-white border-0">
+        <div class="row align-items-center">
+          <div class="col-8">
+            <h3 class="mb-0">My account</h3>
+          </div>
+          <div class="col-4 text-right">
+            <a href="/logout" class="btn btn-sm btn-primary">Logout</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <form action="" method="POST" enctype="multipart/form-data">
+
+            <input type="hidden" name="user_id" value="<%= user.id %>">
+
+            <h6 class="heading-small text-muted mb-4">Profile Picture</h6>
+            <div class="pl-lg-5">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input-username">Profile Picture</label>
+                          <br>
+                          <img src="userImages/<%= user.image %>" class="rounded-circle" width="100px" height="100px" alt="<%= user.image %>">
+                          <br><br>
+                          <input type="file" id="input-username" class="form-control form-control-alternative" name="image" >
+                          
+                          <!-- <input type="text" id="input-username" class="form-control form-control-alternative" placeholder="Enter Name" value="<%= user.name %>"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4">
+          <h6 class="heading-small text-muted mb-4">User information</h6>
+          <div class="pl-lg-5">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group focused">
+                  <label class="form-control-label" for="input-username">Name</label>
+                  <input type="text" name="name" id="input-username" class="form-control form-control-alternative" placeholder="Enter Name" value="<%= user.name %>">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-email">Email address</label>
+                  <input type="email" name="email" id="input-email" class="form-control form-control-alternative" placeholder="Enter Email Address" value="<%= user.email %>">
+                </div>
+              </div>
+            </div>
+            <!-- <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group focused">
+                  <label class="form-control-label" for="input-first-name">First name</label>
+                  <input type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="First name" value="Lucky">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group focused">
+                  <label class="form-control-label" for="input-last-name">Last name</label>
+                  <input type="text" id="input-last-name" class="form-control form-control-alternative" placeholder="Last name" value="Jesse">
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <div class="pl-lg-4">
+            <div class="form-group focused">
+              <label class="form-control-label">Bio</label>
+              <textarea rows="4" name="bio" class="form-control form-control-alternative" placeholder="A few words about you ..." ><%= user.bio %></textarea>
+            </div>
+          </div>
+
+          
+
+          <hr class="my-4">
+          <!-- Address -->
+          <h6 class="heading-small text-muted mb-4">Other information</h6>
+          <div class="pl-lg-4 other-info">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="form-group focused">
+                        <label class="form-control-label" for="input-city">Batch</label>
+                        <input type="number" name="batch" id="input-city" class="form-control form-control-alternative" placeholder="Enter Batch" value="<%= user.batch %>">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="form-group focused">
+                        <label class="form-control-label" for="input-address">Branch</label>
+                        <input id="input-address" name="branch" class="form-control form-control-alternative" placeholder="Enter Branch" value="<%= user.branch %>" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+              
+              <div class="col-lg-4">
+                <div class="form-group focused">
+                  <label class="form-control-label" for="input-country">Instagram Handle</label>
+                  <input type="text" name="insta" id="input-country" class="form-control form-control-alternative" placeholder="Enter Instagram Handle" value="<%= user.insta %>">
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-country">Roll No</label>
+                  <input type="number" name="roll" id="input-postal-code" class="form-control form-control-alternative" placeholder="Enter Roll No" value="<%= user.roll %>">
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-country">Contact No</label>
+                  <input type="number" name="mno" id="input-postal-code" class="form-control form-control-alternative" placeholder="Enter Contact No" value="<%= user.mobile %>">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card-header bg-white border-0">
+            <div class="row align-items-center">
+              <div class="col-3 text-right">
+                <input type="submit" class="btn btn-sm btn-primary" value="Update Profile">
+                
+              </div>
+            </div>
+          </div>
+          
+        </form>
+      </div>
+      
+    </div>
+  </div>
+
+<% include('../layouts/footer.ejs') %> 

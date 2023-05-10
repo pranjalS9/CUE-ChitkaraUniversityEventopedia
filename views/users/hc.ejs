@@ -1,0 +1,570 @@
+
+<% include('../layouts/header.ejs') %> 
+
+
+<!-- <link rel="stylesheet" href="/css/home.css"> -->
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<!--Stylesheets-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!--Responsive-->
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<!--Animation-->
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<!--Prettyphoto-->
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+<!--Font-Awesome-->
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<!--Owl-Slider-->
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
+
+<body data-spy="scroll" data-target=".navbar-default" data-offset="100">
+    <!--Preloader-->
+    <div id="preloader">
+      <div id="pre-status">
+        <div class="preload-placeholder">...</div>
+      </div>
+    </div>
+    <!--Navigation-->
+    <header id="menu" class="sticky">
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+              <!-- <a class="navbar-brand" href="#menu"> -->
+                <img class="navbar-brand" src="images/Logo/logo-1.png" alt="">
+              <!-- </a> -->
+             </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a class="scroll" href="#menu">Home</a></li>
+                <li><a class="scroll" href="#about">About</a></li>
+                <li><a class="scroll" href="#service">Service</a></li>
+                <li><a class="scroll" href="#features">Features</a></li>
+                <li><a class="scroll" href="#portfolio">Portfolio</a></li>
+                <li><a class="scroll" href="#pricing">Pricing</a></li>
+                <li><a class="scroll" href="#team">Team</a></li>
+                <li><a class="scroll" href="#blog">Blog</a></li>
+                <li><a class="scroll" href="#contact">Contact</a></li>
+                <li>
+                  <a href="/user-profile?id=<%= user._id %>">
+                      <img class="user-profile" src="userImages/<%= user.image %>" alt="<%= user.image %>" >
+                  </a>
+              </li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+      </div>
+    </header>
+    <!--Slider-Start-->
+    <section id="slider">
+      <div id="home-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="item active" style="background-image:url(images/homeCarousel/01.jpg)">
+            <div class="carousel-caption container">
+              <div class="row">
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                  <h1>WELCOME TO</h1>
+                  <h2>HOSTEL COMMITTEE</h2>
+                  <p>"Tap the Feet on every Beat!!"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" style="background-image:url(images/homeCarousel/02.jpg)">
+            <div class="carousel-caption container">
+              <div class="row">
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                  <h1>WELCOME TO</h1>
+                  <h2>HOSTEL COMMITTEE</h2>
+                  <p>"Tap the Feet on every Beat!!"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" style="background-image:url(images/homeCarousel/03.jpg)">
+            <div class="carousel-caption container">
+              <div class="row">
+                 <div class="col-md-7 col-sm-12 col-xs-12">
+                  <h1>WELCOME TO</h1>
+                  <h2>HOSTEL COMMITTEE</h2>
+                  <p>"Tap the Feet on every Beat!!"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="home-carousel-left" href="#home-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a> <a class="home-carousel-right" href="#home-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a> </div>
+      </div>
+      <!--/#home-carousel-->
+    </section>
+
+    <footer id="footer">
+      <div class="bg-sec">
+        <div class="container">
+          <h2>WELCOME TO THE <strong>HOSTEL </strong>WORLD!</h2>
+        </div>
+      </div>
+    </footer>
+
+    <!--About-Section-Start-->
+    <section id="about">
+      <div class="container">
+        <div class="col-md-6 col-md-offset-0">
+          <div class="heading">
+            <h2>ABOUT <span>US</span></h2>
+            <div class="line"></div>
+            <p><span><strong>T</strong></span>he Dance and Modelling Club of Chitkara University. This club strives to bring their culture and tradition on a single platform. The activities are designed to offer a challenging program that encourages discovery and creativity for those students whose special interests and talents lead them to the department of modeling and dance; to give broad-based exposure to the various aspects of drama and dance; and to contribute to the cultural enrichment of the community at large.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-md-offset-0" >
+          <div class="heading">
+            <!-- <h2>UPCOMING <span>EVENTS</span></h2>
+            <div class="line"></div>
+            <p>
+            <ul class="updates">
+              <li type="filled-circle">
+                <span><strong>LOHRI</strong></span>
+              </li>
+              <li type="filled-circle">
+                <span><strong>BONANZA - Fashion Show</strong></span>
+              </li>
+            </ul>
+            </p>
+            
+          </div> -->
+          <div class="row">
+            <div class="col-md-2 col-sm-6 col-xs-12 team-main-sec wow slideInUp club-team" data-wow-duration="1s" data-wow-delay=".1s" style="width: 250px;">
+              <div class="team-sec">
+                <div class="team-img"> <img src="images/Team/cs-1.jpg" class="img-responsive" alt="">
+                  <div class="team-desc">
+                    <h5>MRS. SHASHI DIWAN</h5>
+                    <span><b>FACULTY COORDINATOR</b></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--Team-Section-Start-->
+    <section id="team">
+      <div class="container">
+        <div class="col-md-10 col-md-offset-2">
+          <div class="heading" style="margin-left: -50px;">
+            <h2>OUR <span>TEAM</span></h2>
+            <div class="line"></div>
+            <p><span><strong>"I</strong></span>f your actions inspire others to dream more, learn more, do more and become more, you are a leader.”</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-sm-6 col-xs-12 team-main-sec wow slideInUp club-team" data-wow-duration="1s" data-wow-delay=".1s">
+            <div class="team-sec">
+              <div class="team-img"> <img src="images/Team/cs-1.jpg" class="img-responsive" alt="">
+                <div class="team-desc">
+                  <h5>AVINASH VERMA</h5>
+                  <p>PRESIDENT</p>
+                  <ul class="team-social-icon">
+                    <li><a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://instagram.com/pranjal.9?igshid=YmMyMTA2M2Y=" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s" data-wow-delay=".2s">
+            <div class="team-sec">
+              <div class="team-img"> <img src="images/Team/cs-2.jpg" class="img-responsive" alt="">
+                <div class="team-desc">
+                  <h5>ISHA RATHORE</h5>
+                  <p>VICE PRESIDENT</p>
+                  <ul class="team-social-icon">
+                    <li><a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://instagram.com/isha4.12?igshid=YmMyMTA2M2Y=" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s" data-wow-delay=".3s">
+            <div class="team-sec">
+              <div class="team-img"> <img src="images/Team/ts.jpg" class="img-responsive" alt="">
+                <div class="team-desc">
+                  <h5>MUSKAN THAKUR</h5>
+                  <p>GENERAL SECRETARY</p>
+                  <ul class="team-social-icon">
+                    <li><a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://instagram.com/i_muskanthakur01?igshid=YmMyMTA2M2Y=" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s" data-wow-delay=".4s">
+            <div class="team-sec">
+              <div class="team-img"> <img src="images/Team/ss.jpg" class="img-responsive" alt="">
+                <div class="team-desc">
+                  <h5>MANJOT SINGH</h5>
+                  <p>JOINT SECRETARY</p>
+                  <ul class="team-social-icon">
+                    <li><a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://instagram.com/manjotsingh230?igshid=YmMyMTA2M2Y=" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s" data-wow-delay=".3s">
+            <div class="team-sec">
+              <div class="team-img"> <img src="images/Team/ts.jpg" class="img-responsive" alt="">
+                <div class="team-desc">
+                  <h5>SHAGUN RANA</h5>
+                  <p>TREASURER</p>
+                  <ul class="team-social-icon">
+                    <li><a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://instagram.com/shagunrana349?igshid=YmMyMTA2M2Y=" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s" data-wow-delay=".4s">
+            <div class="team-sec">
+              <div class="team-img"> <img src="images/Team/ss.jpg" class="img-responsive" alt="">
+                <div class="team-desc">
+                  <h5>ARYAN MALHOTRA</h5>
+                  <p>SPORTS SECRETARY</p>
+                  <ul class="team-social-icon">
+                    <li><a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Pricing-Section-Start-->
+    <section id="pricing">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="heading">
+            <h2>UPCOMING <span>EVENTS</span></h2>
+            <div class="line"></div>
+            <p>"<span><strong>B</strong></span>e a student of success, learn everything you can from those who have been the most successful"</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms" style="align-items: center;">
+              <ul class="pricing">
+                <li class="plan-header">
+                  <div class="price-duration">
+                    <div class="price"> ₹100/- </div>
+                    <div class="duration"> per person </div>
+                  </div>
+                  <div class="plan-name"> BONANZA </div>
+                </li>
+                <li><strong>MODELLING CONTEST</strong></li>
+                <li><strong>TROPHY FOR WINNER</strong></li>
+                <li><a class="btn-order" href="/register-club">Register Now</a> </li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+
+    <!--Portfolio-Section-Start-->
+    <section id="portfolio">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="heading">
+            <h2>MAIN <span>EVENTS</span></h2>
+            
+            <div class="line"></div>
+            <br><br>
+          </div>
+        </div>
+        <div class="text-center">
+          <ul class="portfolio-filter">
+            <li><a class="active" href="#" data-filter="*">All Events</a></li>
+            <li><a href="#" data-filter=".uni">University Events</a></li>
+            <li><a href="#" data-filter=".club">Club Events</a></li>
+          </ul>
+          <!--/#portfolio-filter-->
+        </div>
+        <div class="portfolio-items">
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item uni">
+            <div class="portfolio-item-inner"> <img class="img-responsive" src="images/uni-events/01.jpg" alt="">
+              <div class="portfolio-info"> <a class="preview" href="images/uni-events/01.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                <h6>Zoom In</h6>
+              </div>
+            </div>
+          </div>
+          <!--/.portfolio-item-->
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item uni">
+            <div class="portfolio-item-inner"> <img class="img-responsive" src="images/uni-events/03.jpg" alt="">
+              <div class="portfolio-info"> <a class="preview" href="images/uni-events/03.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                <h6>Zoom In</h6>
+              </div>
+            </div>
+          </div>
+          <!--/.portfolio-item-->
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item club">
+            <div class="portfolio-item-inner"> <img class="img-responsive" src="images/clubs/staccatos/home.jpg" alt="">
+              <div class="portfolio-info"> <a class="preview" href="images/clubs/staccatos/home.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                <h6>Zoom In</h6>
+              </div>
+            </div>
+          </div>
+          <!--/.portfolio-item-->
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item club">
+            <div class="portfolio-item-inner"> <img class="img-responsive" src="images/clubs/cut-c/home.jpg" alt="">
+              <div class="portfolio-info"> <a class="preview" href="images/clubs/cut-c/home.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                <h6>Zoom In</h6>
+              </div>
+            </div>
+          </div>
+          <!--/.portfolio-item-->
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item uni">
+            <div class="portfolio-item-inner"> <img class="img-responsive" src="images/uni-events/02.jpg" alt="">
+              <div class="portfolio-info"> <a class="preview" href="images/uni-events/02.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                <h6>Zoom In</h6>
+              </div>
+            </div>
+          </div>
+          <!--/.portfolio-item-->
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item club">
+            <div class="portfolio-item-inner"> <img class="img-responsive" src="images/clubs/cu-arcs/home.jpg" alt="">
+              <div class="portfolio-info"> <a class="preview" href="images/clubs/cu-arcs/home.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                <h6>Zoom In</h6>
+              </div>
+            </div>
+          </div>
+          <!--/.portfolio-item-->
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item uni">
+            <div class="portfolio-item-inner"> <img class="img-responsive" src="images/uni-events/04.jpg" alt="">
+              <div class="portfolio-info"> <a class="preview" href="images/uni-events/04.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                <h6>Zoom In</h6>
+              </div>
+            </div>
+          </div>
+          <!--/.portfolio-item-->
+        </div>
+      </div>
+    </section>
+
+    
+    
+    
+    
+    
+    <!--Blog-Section-Start-->
+    <section id="blog">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="heading">
+            <h2>PAST <span>EVENTS</span></h2>
+            <div class="line"></div>
+            <p><span><strong>L</strong></span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+              et dolore magna aliqua. Ut enim ad minim veniam</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-4 blog-sec">
+              <div class="blog-info"> <img src="images/Blog/1.jpg" class="img-responsive" alt="">
+                <div class="data-meta">
+                  <h4>Aug</h4>
+                  <strong>08</strong><br>
+                  2022 </div>
+                <a href="#">
+                <h5>DASTAAN-E-HIND</h5>
+                </a>
+                <p>In association with the university's staccatos club, the Office of Student
+                  Affairs organised an event “Dastaan-e-Hind” on Aug 8, 2022, to
+                  celebrate "Ajaadi Ka Amrit Mahotsav".It was an on-campus event
+                  where the students showcased their dance skills to the patriotic theme
+                  songs. The participants showed the spirit of dance and expressed their
+                  love for our country. The first position was bagged by Prince.</p>
+                <a href="#" class="btn-blg">Read More</a> </div>
+            </div>
+            <div class="col-md-4 blog-sec">
+              <div class="blog-info"> <img src="images/Blog/2.jpg" class="img-responsive" alt="">
+                <div class="data-meta">
+                  <h4>Oct</h4>
+                  <strong>01-02</strong><br>
+                  2022 </div>
+                <a href="#">
+                <h5>GARBA WORKSHOP</h5>
+                </a>
+                <p>A 2-day workshop on Garba was organized by Staccatos, the dance club of
+                  Chitkara University HP in the courtyard on 1 October 2022 and 2 October
+                  2022. This workshop was executed under the guidance of Ms Gurjeet
+                  Kaur, faculty coordinator of the college dance society, which was
+                  thoroughly enjoyed and loved by all the participants. The workshop saw
+                  incredible participation and enthusiasm from all the students.</p>
+                <a href="file:///C:/Users/parud/AppData/Local/Microsoft/Windows/INetCache/IE/MSJB1ASM/Garba_Workshop[1].pdf" class="btn-blg">Read More</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--Contact-Section-Start-->
+    <!-- <section id="contact">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="heading">
+            <h2>CONTACT <span>US</span></h2>
+            <div class="line"></div>
+            <p><span><strong>L</strong></span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+              et dolore magna aliqua. Ut enim ad minim veniam</p>
+          </div>
+        </div>
+        <div class="text-center">
+          <div class="col-md-6 col-sm-6 contact-sec-1">
+            <h4>CONTACT IN<span>FO</span></h4>
+            <ul class="contact-form">
+              <li><i class="fa fa-map-marker"></i>
+                <h6><strong>Address:</strong> No 123 , Wallstreet, India </h6>
+              </li>
+              <li><i class="fa fa-envelope"></i>
+                <h6><strong>Mail Us:</strong> <a href="#">Info@yourdomain.com</a></h6>
+              </li>
+              <li><i class="fa fa-phone"></i>
+                <h6><strong>Phone:</strong> +91 123-456-7890 </h6>
+              </li>
+              <li><i class="fa fa-wechat"></i>
+                <h6><strong>Website:</strong> <a href="#">www.Cosmix.com</a> </h6>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <form id="main-contact-form" name="contact-form" method="post" action="#">
+              <div class="row  wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" placeholder="Name" required="required">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="Email Address" required="required">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
+              </div>
+              <div class="form-group">
+                <textarea name="message" id="message" class="form-control" rows="4" placeholder="Enter your message" required="required"></textarea>
+              </div>
+              <a class="btn-send col-md-12 col-sm-12 col-xs-12" href="#">Send Now</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    
+    <footer id="footer-down">
+      <h2>Follow Us On</h2>
+      <ul class="social-icon">
+        <li class="facebook hvr-pulse"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+        <li class="twitter hvr-pulse"><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li class="linkedin hvr-pulse"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li class="google-plus hvr-pulse"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li class="youtube hvr-pulse"><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <li class="instagram hvr-pulse"><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li class="behance hvr-pulse"><a href="#"><i class="fa fa-behance"></i></a></li>
+      </ul>
+      <p> &copy; Copyright 2022 Chitkara University - Created By : <a href="http://templatestock.co" target="_blank">Pranjal Sharma & Aviral Jayant Patel</a> </p>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+<!--Boostrap-Jquery-->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!--Preetyphoto-Jquery-->
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<!--NiceScroll-Jquery-->
+<!-- <script type="text/javascript" src="js/jquery.nicescroll.js"></script> -->
+<!-- <script type="text/javascript" src="js/waypoints.min.js"></script> -->
+<!--Isotopes-->
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<!--Wow-Jquery-->
+<script type="text/javascript" src="js/wow.js"></script>
+<!--Count-Jquey-->
+<script type="text/javascript" src="js/jquery.countTo.js"></script>
+<script type="text/javascript" src="js/jquery.inview.min.js"></script>
+<!--Owl-Crousels-Jqury-->
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<!--Main-Scripts-->
+<script type="text/javascript" src="js/script.js"></script>
+
+<!-- <script type="text/javascript" src="http://stats.hosting24.com/count.php"></script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="navbar">
+
+    <ul>
+        <div><li><a href="#">Home</a></li></div>
+        <div><li><a href="#about">About</a></li></div>
+        <div><li><a href="#club">Clubs</a></li></div>
+        <div><li><a href="#organization">Organizations</a></li></div>
+        <div><li><a href="#organising_head">Organising Heads</a></li></div>
+        <div><li><a href="#contact">Contact</a></li></div>
+        <div>
+            <li>
+                <a href="/user-profile?id=     <%= user._id %>     ">
+                    <img src="userImages/<%= user.image %>" alt="<%= user.image %>" >
+                </a>
+            </li>
+        </div> -->
+        <!-- <div>
+            <li>
+          <select name="settings" id="settings">
+              <option value="options"></option>
+              <option value="profile">My Profile</option>
+              <option value="logout">
+                <a href="/logout">Logout</a>
+              </option>
+            </select>
+        </li>
+        </div> -->
+        
+<!--         
+    </ul>
+    
+</div> -->
+
+
+
+
+
+<% include('../layouts/footer.ejs') %> 

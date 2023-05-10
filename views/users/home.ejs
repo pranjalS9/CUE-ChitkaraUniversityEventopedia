@@ -1,0 +1,1270 @@
+
+<% include('../layouts/header.ejs') %> 
+
+
+<!-- <link rel="stylesheet" href="/css/home.css"> -->
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<!--Stylesheets-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!--Responsive-->
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<!--Animation-->
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<!--Prettyphoto-->
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+<!--Font-Awesome-->
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<!--Owl-Slider-->
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
+
+<body data-spy="scroll" data-target=".navbar-default" data-offset="100">
+    <!--Preloader-->
+    <div id="preloader">
+      <div id="pre-status">
+        <div class="preload-placeholder">...</div>
+      </div>
+    </div>
+    <!--Navigation-->
+    <header id="menu" class="sticky">
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+              <!-- <a class="navbar-brand" href="#menu"> -->
+                <img class="navbar-brand" src="images/Logo/logo-1.png" alt="">
+              <!-- </a> -->
+             </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a class="scroll" href="#menu">Home</a></li>
+                <li><a class="scroll" href="#about">About</a></li>
+                <li><a class="scroll" href="#service">Clubs</a></li>
+                <li><a class="scroll" href="#features">Clubs Info</a></li>
+                <li><a class="scroll" href="#portfolio">Recent Events</a></li>
+                <li><a class="scroll" href="#pricing">Club Fee</a></li>
+                <li><a class="scroll" href="#team">Team</a></li>
+                <li><a class="scroll" href="#blog">Blog</a></li>
+                <li>
+                  <a href="/user-profile?id=<%= user._id %>">
+                      <img class="user-profile" src="userImages/<%= user.image %>" alt="<%= user.image %>" >
+                  </a>
+              </li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+      </div>
+    </header>
+    <!--Slider-Start-->
+    <section id="slider">
+      <div id="home-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="item active" style="background-image:url(images/homeCarousel/01.jpg)">
+            <div class="carousel-caption container">
+              <div class="row">
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                  <h1>Explore Your Potential With</h1>
+                  <h2>CUE</h2>
+                  <p>"It's very important in life to know when your 'CUE' comes"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" style="background-image:url(images/homeCarousel/02.jpg)">
+            <div class="carousel-caption container">
+              <div class="row">
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                  <h1>Explore Your Potential With</h1>
+                  <h2>CUE</h2>
+                  <p>"It's very important in life to know when your 'CUE' comes"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" style="background-image:url(images/homeCarousel/03.jpg)">
+            <div class="carousel-caption container">
+              <div class="row">
+                 <div class="col-md-7 col-sm-12 col-xs-12">
+                  <h1>Explore Your Potential With</h1>
+                  <h2>CUE</h2>
+                  <p>"It's very important in life to know when your 'CUE' comes"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="home-carousel-left" href="#home-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a> <a class="home-carousel-right" href="#home-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a> </div>
+      </div>
+      <!--/#home-carousel-->
+    </section>
+    <!--About-Section-Start-->
+    <section id="about">
+      <div class="container">
+        <div class="col-md-6 col-md-offset-0">
+          <div class="heading">
+            <h2>ABOUT <span>US</span></h2>
+            <div class="line"></div>
+            <p><span><strong>L</strong></span>ocated 30 kms from Chandigarh, Chitkara University offers a world of learning that will help you reach your goals. Choose from our varied industry endorsed programs. Learn from an outstanding faculty at our state-of-the-art teaching facilities. Explore unlimited opportunities to get placed with one of the 1500+ campus recruiters and meet other students with dreams as big as yours.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-md-offset-0" style="border: solid black 1px;">
+          <div class="heading">
+            <h2>UPCOMING <span>EVENTS</span></h2>
+            <div class="line"></div>
+            <p>
+            <ul class="updates">
+              <li type="filled-circle">
+                <span><strong>LOHRI</strong></span>
+              </li>
+              <li type="filled-circle">
+                <span><strong>BONANZA - Fashion Show</strong></span>
+              </li>
+            </ul>
+            </p>
+            
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 ab-sec">
+            <div class="col-md-6">
+              <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms"><span>W</span>e Are Creative And Awesome</h3>
+              <p><span><strong>B</strong></span>eing a part of a club or a society helps you to gain knowledge, skills and experience in leadership, communication, problem-solving, group development and management, finance, presentation and public speaking. You will feel the change in yourself. Joining a club or a society will enable you to connect to a peer group who shares similar interests as you. You will get an insight into other states culture, values, thinking process and views. The connections that you make here can also possibly lead to life-long relationships.
+                  <br>
+                  And of course, it is a great experience to put on your CV. After your graduation, when you apply for jobs, you will stand out amongst your peers. Your academic scores won't stand out alone. You need extra-curricular to decorate your CV.
+              </p>
+            </div>
+            <div class="col-md-6 ab-sec-img wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms"><img src="images/Aboutus/club-header.jpg.png" alt=""> </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--About-Sec-2-Start-->
+    <!-- <div class="bg-sec">
+      <div class="container">
+        <div class="col-md-10 col-sm-10 col-xs-8">
+          <h3>Soon we are going to provide you a CUE app</h3>
+          
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-4"> <a class="btn-down" href="#">Download</a> </div>
+      </div>
+    </div> -->
+    <!--Service-Section-Start-->
+    <section id="service">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="heading">
+            <h2>OUR <span>CLUBS</span></h2>
+            <div class="line"></div>
+            <p><span><strong>C</strong></span>hitkara University, HP is a place where freshers have tremendous opportunities for exploring their potential.<br> Listed below are some clubs and societies that are active nowadays:</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="features-sec">
+            <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+              <div class="media service-box">
+                <div class="pull-left"> <i class="fa fa-bullseye"></i> </div>
+                <div class="media-body">
+                  <h5 class="media-heading">
+                    <a href="/staccatos">Staccatos</a>
+                  </h5>
+                  <p>"Dance & Modelling Club"</p>
+                </div>
+              </div>
+            </div>
+            <!--/.col-md-4-->
+            <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+              <div class="media service-box">
+                <div class="pull-left"><i class="fa fa-bullseye"></i></div>
+                <div class="media-body">
+                  <h5 class="media-heading">
+                    <a href="/hc">HC</a>
+                  </h5>
+                  <p>"Hostel committee"</p>
+                </div>
+              </div>
+            </div>
+            <!--/.col-md-4-->
+            <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+              <div class="media service-box">
+                <div class="pull-left"> <i class="fa fa-bullseye"></i> </div>
+                <div class="media-body">
+                  <h5 class="media-heading">
+                    <a href="/cutC">CUT-C</a>
+                  </h5>
+                  <p>"Dramatics Club"</p>
+                </div>
+              </div>
+            </div>
+            <!--/.col-md-4-->
+            <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+              <div class="media service-box">
+                <div class="pull-left"> <i class="fa fa-bullseye"></i> </div>
+                <div class="media-body">
+                  <h5 class="media-heading">
+                    <a href="/cuArcs">CU-Arcs</a>
+                  </h5>
+                  <p>"Sports Club"</p>
+                </div>
+              </div>
+            </div>
+            <!--/.col-md-4-->
+            <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+              <div class="media service-box">
+                <div class="pull-left"> <i class="fa fa-bullseye"></i> </div>
+                <div class="media-body">
+                  <h5 class="media-heading">
+                    <a href="/euphony">Euphony</a>
+                  </h5>
+                  <p>"Music Club"</p>
+                </div>
+              </div>
+            </div>
+            <!--/.col-md-4-->
+            <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+              <div class="media service-box">
+                <div class="pull-left"> <i class="fa fa-bullseye"></i> </div>
+                <div class="media-body">
+                  <h5 class="media-heading">
+                    <a href="/mathsPirates">Maths Pirates</a>
+                  </h5>
+                  <p>"Maths Club"</p>
+                </div>
+              </div>
+            </div>
+            <!--/.col-md-4-->
+            <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+              <div class="media service-box">
+                <div class="pull-left"> <i class="fa fa-bullseye"></i> </div>
+                <div class="media-body">
+                  <h5 class="media-heading">
+                    <a href="/sufy">SUFY</a>
+                  </h5>
+                  <p>"Poetry Club"</p>
+                </div>
+              </div>
+            </div>
+            <!--/.col-md-4-->
+            <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+              <div class="media service-box">
+                <div class="pull-left"> <i class="fa fa-bullseye"></i> </div>
+                <div class="media-body">
+                  <h5 class="media-heading">
+                    <a href="/csi">CSI</a>
+                  </h5>
+                  <p>"Computer Society of India"</p>
+                </div>
+              </div>
+            </div>
+            <!--/.col-md-4-->
+            <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+              <div class="media service-box">
+                <div class="pull-left"> <i class="fa fa-bullseye"></i> </div>
+                <div class="media-body">
+                  <h5 class="media-heading">
+                    <a href="/asclepius">Asclepius</a>
+                  </h5>
+                  <p>"Pharmaceutical Club"</p>
+                </div>
+              </div>
+            </div>
+            <!--/.col-md-4-->
+            <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+              <div class="media service-box">
+                <div class="pull-left"> <i class="fa fa-bullseye"></i> </div>
+                <div class="media-body">
+                  <h5 class="media-heading">
+                    <a href="/readers">Reader's Club</a>
+                  </h5>
+                  <p>"Literary Club"</p>
+                </div>
+              </div>
+            </div>
+            <!--/.col-md-4-->
+            <div class="row">
+              <div class="features-sec">
+                <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                  <div class="media service-box">
+                    <div class="pull-left"> <i class="fa fa-bullseye"></i> </div>
+                    <div class="media-body">
+                      <h5 class="media-heading">
+                        <a href="/happiness">Happiness Center</a>
+                      </h5>
+                      <p>"Happiness Club"</p>
+                    </div>
+                  </div>
+                </div>
+                <!--/.col-md-4-->
+      <!-- </div>
+    </div> -->
+          </div>
+        </div>
+
+        <div class="experience">
+          <!-- <div class="col-sm-6 col-xs-12">
+            <div class="our-skills wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <div class="single-skill wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <p class="lead">User Experiances</p>
+                <div class="progress">
+                  <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="90" style="width: 95%;"> 95% </div>
+                </div>
+              </div>
+              <div class="single-skill wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="400ms">
+                <p class="lead">Web Design</p>
+                <div class="progress">
+                  <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="80" style="width: 80%;"> 80% </div>
+                </div>
+              </div>
+              <div class="single-skill wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+                <p class="lead">Programming</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuenow="0" aria-valuemin="100" aria-valuemax="60" style="width: 60%;"> 60% </div>
+                </div>
+              </div>
+              <div class="single-skill wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="600ms">
+                <p class="lead">Fun</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuenow="0" aria-valuemin="100" aria-valuemax="70" style="width: 70%;"> 70% </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          
+    <!-- ORGANISATIONS -->
+    <section id="service">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="heading">
+            <h2>OUR <span>ORGANISATIONS</span></h2>
+            <div class="line"></div>
+            <p><span><strong>C</strong></span>hitkara University, HP is a place where freshers have tremendous opportunities for exploring their potential.<br> Listed below are some organisations running in the university:</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="features-sec">
+            <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+              <div class="media service-box">
+                <div class="pull-left"> <i class="fa fa-bullseye"></i> </div>
+                <div class="media-body">
+                  <h5 class="media-heading">
+                    <a href="/ncc">NCC</a>
+                  </h5>
+                  <p>"National Cadet Corps"</p>
+                </div>
+              </div>
+            </div>
+            <!--/.col-md-4-->
+            <div class="row">
+              <div class="features-sec">
+                <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                  <div class="media service-box">
+                    <div class="pull-left"> <i class="fa fa-bullseye"></i> </div>
+                    <div class="media-body">
+                      <h5 class="media-heading">
+                        <a href="/nss">NSS</a>
+                      </h5>
+                      <p>"National Service Scheme"</p>
+                    </div>
+                  </div>
+                </div>
+                <!--/.col-md-4-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- OFFICIAL'S DESK -->
+
+          <div class="col-md-8 col-md-offset-2">
+            <div class="heading">
+              <h2>OFFICIAL'S <span>DESK</span></h2>
+              <div class="line"></div>
+              
+            </div>
+          </div>
+
+
+
+          <div class="col-sm-6 col-xs-12 office">
+            <p><span><strong>L</strong></span>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+          
+          <div class="col-sm-6  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms"> <img src="images/logo/neha.jpg" class="img-responsive" alt=""> </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--Features-Section-Start-->
+    <section id="features">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="heading">
+            <h2>ABOUT <span>CLUBS</span></h2>
+            <div class="line"></div>
+            <p><span><strong>H</strong></span>ere we are giving a brief description about every club. Read it carefully and we hope you find your CUE here:</p>
+          </div>
+        </div>
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#tab-1" role="tab" data-toggle="tab"><img class="club-icon" src="images/Logo/staccatos.jpg" alt=""></a></li>
+          <li role="presentation"><a href="#tab-2" role="tab" data-toggle="tab"><img class="club-icon" src="images/Logo/hc.jpg" alt=""></a></li>
+          <li role="presentation"><a href="#tab-3" role="tab" data-toggle="tab"><img class="club-icon" src="images/Logo/cutC.jpg" alt=""></a></li>
+          <li role="presentation"><a href="#tab-4" role="tab" data-toggle="tab"><img class="club-icon" src="images/Logo/cuArcs.jpg" alt=""></a></li>
+          <li role="presentation"><a href="#tab-5" role="tab" data-toggle="tab"><img class="club-icon" src="images/Logo/euphony.jpg" alt=""></a></li>
+          <li role="presentation"><a href="#tab-6" role="tab" data-toggle="tab"><img class="club-icon" src="images/Logo/math.jpg" alt=""></a></li>
+          <li role="presentation"><a href="#tab-7" role="tab" data-toggle="tab"><img class="club-icon" src="images/Logo/sufy.jpg" alt=""></a></li>
+          <li role="presentation"><a href="#tab-8" role="tab" data-toggle="tab"><img class="club-icon" src="images/Logo/csi.jpg" alt=""></a></li>
+          <li role="presentation"><a href="#tab-9" role="tab" data-toggle="tab"><img class="club-icon" src="images/Logo/asclepius.jpg" alt=""></a></li>
+          <li role="presentation"><a href="#tab-10" role="tab" data-toggle="tab"><img class="club-icon" src="images/Logo/readers.jpg" alt=""></a></li>
+          <li role="presentation"><a href="#tab-11" role="tab" data-toggle="tab"><img class="club-icon" src="images/Logo/toastmasters.jpg" alt=""></a></li>
+          <li role="presentation"><a href="#tab-12" role="tab" data-toggle="tab"><img class="club-icon" src="images/Logo/ncc.jpg" alt=""></a></li>
+          <li role="presentation"><a href="#tab-13" role="tab" data-toggle="tab"><img class="club-icon" src="images/Logo/nss.jpg" alt=""></a></li>
+          <li role="presentation"><a href="#tab-14" role="tab" data-toggle="tab"><img class="club-icon" src="images/Logo/happiness.jpg" alt=""></a></li>
+          <li role="presentation"><a href="#tab-15" role="tab" data-toggle="tab"><img class="club-icon" src="images/Logo/ceed.jpg" alt=""></a></li>
+        </ul>
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane fade in active feat-sec" id="tab-1">
+            <div class="col-md-6 tab">
+              <h5>Staccatos</h5>
+              <div class="line"></div>
+              <div class="clearfix"></div>
+              <p class="feat-sec">The Dance and Modelling Club of Chitkara University. This club strives to bring their culture and tradition on a single platform. The activities are designed to offer a challenging program that encourages discovery and creativity for those students whose special interests and talents lead them to the department of modeling and dance; to give broad-based exposure to the various aspects of drama and dance; and to contribute to the cultural enrichment of the community at large. <a href="/staccatos">Read more...</a><br>
+              </p>
+              
+            </div>
+            <div class="col-md-6 tab-img"><img src="images/clubs/staccatos/home.jpg" class="img-responsive" alt=""></div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade feat-sec" id="tab-2">
+            <div class="col-md-6 tab">
+              <h5>HC</h5>
+              <div class="line"></div>
+              <div class="clearfix"></div>
+              <p class="feat-sec">The life of the hostel is different from that of a home. The main difference of hostel life is independence and HOSTEL COMMITTEE ensures that the hostellers use this independence efficiently and productively by organizing various events where students can showcase their talent not only in co-curricular activities but in academia. At the end of every semester, “Hostel Night” is organized for enjoying singing and dancing performances by the hostellers. HOSTEL COMMITTEE believes in doing little things apart from academics to contribute towards the overall growth of today’s youth. Students learn to live together and strengthen their relations with mutual cooperation and goodwill as they come from different parts of the country. Hostel life gives you an opportunity to make memories that can make you smile for the rest of your life. <a href="/hc">Read more...</a><br>
+              <br><br>
+              </p>
+              
+            </div>
+            <div class="col-md-6 tab-img"><img src="images/clubs/hc/home.jpg" class="img-responsive" alt=""></div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade feat-sec" id="tab-3">
+            <div class="col-md-6 tab">
+              <h5>CUT-C</h5>
+              <div class="line"></div>
+              <div class="clearfix"></div>
+              <p class="feat-sec">CUTC stands for Chitkara University Theatre Club. The only theatre club of the university which organizes dramatic events and many more cultural events. The aim of this club is to create awareness among the students by doing fun activities. The core part of CUTC is TAMASHBEENZ, which perform street plays on social issues inside and outside the college. The team TAMASHBEENZ has won many prizes. It wishes to train and develop the acting skills and to cultivate the creative talent of each actor-student. <a href="/cutC">Read more...</a><br>
+              </p>
+              
+            </div>
+            <div class="col-md-6 tab-img"><img src="images/clubs/cut-c/home.jpg" class="img-responsive" alt=""></div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade feat-sec" id="tab-4">
+            <div class="col-md-6 tab">
+              <h5>CU-Arcs</h5>
+              <div class="line"></div>
+              <div class="clearfix"></div>
+              <p class="feat-sec">To make available to students opportunities for the instruction and participation in a wide range of recreational and competitive programs which can develop sound lifelong leisure values and skills? To provide an avenue for camaraderie in the college community through common interests; to develop a feeling of belonging among individuals in the shared pursuit of leisure interests.
+                To develop leadership by providing opportunities for students to organize, administrate and problem solve for individual clubs and to become officers thereof. The club has organized events like Cross Country, Kho Kho, 6 on 6 Cricket, Chitkara CPL, etc. <a href="/cuArcs">Read more...</a><br>
+              </p>
+              
+            </div>
+            <div class="col-md-6 tab-img"><img src="images/clubs/cu-arcs/home.jpg" class="img-responsive" alt=""></div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade feat-sec" id="tab-5">
+            <div class="col-md-6 tab">
+              <h5>Euphony</h5>
+              <div class="line"></div>
+              <div class="clearfix"></div>
+              <p class="feat-sec">EUPHONY is the musical club which focuses on bringing out the talent of the students in the musical genre. The various events which this club organizes are related to singing and instrument playing.
+                Many bands have been formed in the University which give performances on different occasions. The events organized by the club are Sur Sangam, Jhankaar, Dhwani, Voice of Chitkara , Rap Battle, Rock Battle, Dhinchak (Antakshari) etc. <a href="/euphony">Read more...</a>
+              </p>
+            </div>
+            <div class="col-md-6 tab-img"><img src="images/clubs/euphony/euphony.jpg" class="img-responsive" alt=""></div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade feat-sec" id="tab-6">
+            <div class="col-md-6 tab">
+              <h5>Maths Pirates</h5>
+              <div class="line"></div>
+              <div class="clearfix"></div>
+              <p class="feat-sec">The agenda of this club is to promote the advancement, dissemination and promotion of mathematical knowledge, the introduction to the importance of quantitative aptitude, elaboration of the ‘what’, the ‘why’ and ‘how’ of quantitative aptitude, introduction to and scope of Vedic Mathematics, etc. This club organizes various panel games and quizzes on aptitude basis as well as basic Mathematics in a much entertaining and enriching manner. The club wishes to foster a community of students around a common interest in Mathematics. <a href="mathsPirates">Read more...</a><br>
+              </p>
+              
+            </div>
+            <div class="col-md-6 tab-img"><img src="images/clubs/maths-pirates/home.jpg" class="img-responsive" alt=""></div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade feat-sec" id="tab-7">
+            <div class="col-md-6 tab">
+              <h5>S.U.F.Y.</h5>
+              <div class="line"></div>
+              <div class="clearfix"></div>
+              <p class="feat-sec">The SUFY club of Chitkara University is a literary club involved in various activities aimed at building up the confidence and grooming the talents of students in facing various interpersonal activities and competitions. The club also wishes to encourage students become orators to display their intellectual and independent thinking skills and imbibe a sense of confidence. <a href="/sufy">Read more...</a><br>
+              </p>
+              
+            </div>
+            <div class="col-md-6 tab-img"><img src="images/clubs/sufy/home.jpg" class="img-responsive" alt=""></div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade feat-sec" id="tab-8">
+            <div class="col-md-6 tab">
+              <h5>CSI</h5>
+              <div class="line"></div>
+              <div class="clearfix"></div>
+              <p class="feat-sec">The Computer Society of India is a non-profit professional meet to exchange views and information, learn and share ideas. The wide spectrum of members is committed to the advancement of theory and practice of Computer Engineering and Technology Systems, Science and Engineering etc.
+                For the benefit of members, the Chitkara University CSI chapter organizes monthly technical meetings, product presentations, exhibitions, film and video shows. <a href="/csi">Read more...</a><br>
+              </p>
+            </div>
+            <div class="col-md-6 tab-img"><img src="images/Features/05.jpg" class="img-responsive" alt=""></div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade feat-sec" id="tab-9">
+            <div class="col-md-6 tab">
+              <h5>Asclepius</h5>
+              <div class="line"></div>
+              <div class="clearfix"></div>
+              <p class="feat-sec">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing<br>
+              </p>
+              
+            </div>
+            <div class="col-md-6 tab-img"><img src="images/Features/05.jpg" class="img-responsive" alt=""></div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade feat-sec" id="tab-10">
+            <div class="col-md-6 tab">
+              <h5>Reader's Club</h5>
+              <div class="line"></div>
+              <div class="clearfix"></div>
+              <p class="feat-sec">The Reader's Club has been founded to promote languages and literature. From time to time, the society organizes a rich and diverse array of literary activities such as debates, declamations, group discussions, poetry writing and recitation, shortstory writing, quiz contests, interactive/lecture sessions, etc. Through these activities, literary coordinators (student and teacher) reach out to language and literature lovers and try to create a space for sharing emotions and thoughts. <a href="/readers">Read more...</a><br>
+              </p>
+            </div>
+            <div class="col-md-6 tab-img"><img src="images/Features/05.jpg" class="img-responsive" alt=""></div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade feat-sec" id="tab-11">
+            <div class="col-md-6 tab">
+              <h5>Toastmasters</h5>
+              <div class="line"></div>
+              <div class="clearfix"></div>
+              <p class="feat-sec">Toastmasters International is a non-profit educational organization that teaches public speaking and leadership skills through a worldwide network of clubs.
+                300,000 Members
+                149 Countries. Meetings every Saturday.Members include students from all batches and departments. Guests in meetings from all over the world. Pathways learning program to learn over 300 practical workspace skills. <a href="/toastmasters">Read more...</a>
+              </p>
+            </div>
+            <div class="col-md-6 tab-img"><img src="images/clubs/toastmasters/home.jpg" class="img-responsive" alt=""></div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade feat-sec" id="tab-12">
+            <div class="col-md-6 tab">
+              <h5>NCC</h5>
+              <div class="line"></div>
+              <div class="clearfix"></div>
+              <p class="feat-sec">The National Cadet Corps is the Indian military cadet corps with its head Quarters at New Delhi. It is open to school and college students on voluntary basis.The National Cadet Corps in India is a voluntary organization which recruits cadets from high schools, colleges and Universities all over India. The Cadets are given basic military training in small arms and parades. The officers and cadets have no liability for active military service once they complete their course but are given preference over normal candidates during selections based on the achievements in the corps. <a href="/ncc">Read more...</a>
+              </p>
+              
+            </div>
+            <div class="col-md-6 tab-img"><img src="images/clubs/ncc/home.jpg" class="img-responsive" alt=""></div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade feat-sec" id="tab-13">
+            <div class="col-md-6 tab">
+              <h5>NSS</h5>
+              <div class="line"></div>
+              <div class="clearfix"></div>
+              <p class="feat-sec">The NSS unit of Chitkara University provides a platform to the students for community work and developing a sense of involvement in the tasks of nation building. NSS volunteers work to ensure that a needy get help to enhance their standard of living. A variety of activities are organized every year to channelize the energy and idealism of the younger generation into creative pursuits. They educate students and society regarding many issues like health, sanitation, palliation, etc. <a href="/nss">Read more...</a>
+              </p>
+              
+            </div>
+            <div class="col-md-6 tab-img"><img src="images/clubs/nss/home.jpg" class="img-responsive" alt=""></div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade feat-sec" id="tab-14">
+            <div class="col-md-6 tab">
+              <h5>Happiness Center</h5>
+              <div class="line"></div>
+              <div class="clearfix"></div>
+              <p class="feat-sec">Happiness Centre at Chitkara University is an active cell conducting unique events and programmes on the theme of happiness. We believe that happiness is not only that huge smile on your face. It’s a sense of being, a conscious choice on how to live your life. Being happy all the time may take a bit of work, happiness is a choice. <a href="/happiness">Read more...</a>
+              </p>
+              
+            </div>
+            <div class="col-md-6 tab-img"><img src="images/clubs/happiness/home.jpg" class="img-responsive" alt=""></div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade feat-sec" id="tab-15">
+            <div class="col-md-6 tab">
+              <h5>CEED</h5>
+              <div class="line"></div>
+              <div class="clearfix"></div>
+              <p class="feat-sec">CEED, the E-cell, supports its student journey of entrepreneurship through phases like orientation, discovery, implementation, startup, growth and expansion. During the course of learning entrepreneurship, students learn about themselves, entrepreneurship concepts, effective communication, design thinking and selling. These skills are valuable to students no matter if they take up a job as an entrepreneur or become an entrepreneur-Cell students, as learning process take place 70% outside class environment like visit to trade fairs, franchise meet, entrepreneurs meet, industry visits, conferences, competitions etc. And remaining 30% learning happens in class room which involves case study approach, activity based learning, indoor games. So it’s a fun based learning and experiential learning. <a href="/ceed">Read more...</a>
+              </p>
+              
+            </div>
+            <div class="col-md-6 tab-img"><img src="images/Features/05.jpg" class="img-responsive" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Portfolio-Section-Start-->
+    <section id="portfolio">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="heading">
+            <h2>RECENT <span>EVENTS</span></h2>
+            
+            <div class="line"></div>
+            <br><br>
+          </div>
+        </div>
+        <div class="text-center">
+          <ul class="portfolio-filter">
+            <li><a class="active" href="#" data-filter="*">All Events</a></li>
+            <li><a href="#" data-filter=".uni">University Events</a></li>
+            <li><a href="#" data-filter=".club">Club Events</a></li>
+            <li><a href="#" data-filter=".org">Organisation Events</a></li>
+          </ul>
+          <!--/#portfolio-filter-->
+        </div>
+        <div class="portfolio-items">
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item uni">
+            <div class="portfolio-item-inner"> <img class="img-responsive" src="images/uni-events/01.jpg" alt="">
+              <div class="portfolio-info"> <a class="preview" href="images/uni-events/01.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                <h6>Zoom In</h6>
+              </div>
+            </div>
+          </div>
+          <!--/.portfolio-item-->
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item org">
+            <div class="portfolio-item-inner"> <img class="img-responsive" src="images/clubs/ncc/home.jpg" alt="">
+              <div class="portfolio-info"> <a class="preview" href="images/clubs/ncc/home.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                <h6>Zoom In</h6>
+              </div>
+            </div>
+          </div>
+          <!--/.portfolio-item-->
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item uni">
+            <div class="portfolio-item-inner"> <img class="img-responsive" src="images/uni-events/03.jpg" alt="">
+              <div class="portfolio-info"> <a class="preview" href="images/uni-events/03.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                <h6>Zoom In</h6>
+              </div>
+            </div>
+          </div>
+          <!--/.portfolio-item-->
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item club">
+            <div class="portfolio-item-inner"> <img class="img-responsive" src="images/clubs/staccatos/home.jpg" alt="">
+              <div class="portfolio-info"> <a class="preview" href="images/clubs/staccatos/home.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                <h6>Zoom In</h6>
+              </div>
+            </div>
+          </div>
+          <!--/.portfolio-item-->
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item club">
+            <div class="portfolio-item-inner"> <img class="img-responsive" src="images/clubs/cut-c/home.jpg" alt="">
+              <div class="portfolio-info"> <a class="preview" href="images/clubs/cut-c/home.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                <h6>Zoom In</h6>
+              </div>
+            </div>
+          </div>
+          <!--/.portfolio-item-->
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item uni">
+            <div class="portfolio-item-inner"> <img class="img-responsive" src="images/uni-events/02.jpg" alt="">
+              <div class="portfolio-info"> <a class="preview" href="images/uni-events/02.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                <h6>Zoom In</h6>
+              </div>
+            </div>
+          </div>
+          <!--/.portfolio-item-->
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item org">
+            <div class="portfolio-item-inner"> <img class="img-responsive" src="images/clubs/nss/home.jpg" alt="">
+              <div class="portfolio-info"> <a class="preview" href="images/clubs/nss/home.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                <h6>Zoom In</h6>
+              </div>
+            </div>
+          </div>
+          <!--/.portfolio-item-->
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item club">
+            <div class="portfolio-item-inner"> <img class="img-responsive" src="images/clubs/cu-arcs/home.jpg" alt="">
+              <div class="portfolio-info"> <a class="preview" href="images/clubs/cu-arcs/home.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                <h6>Zoom In</h6>
+              </div>
+            </div>
+          </div>
+          <!--/.portfolio-item-->
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item org">
+            <div class="portfolio-item-inner"> <img class="img-responsive" src="images/clubs/happiness/home.jpg" alt="">
+              <div class="portfolio-info"> <a class="preview" href="images/clubs/happiness/home.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                <h6>Zoom In</h6>
+              </div>
+            </div>
+          </div>
+          <!--/.portfolio-item-->
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item uni">
+            <div class="portfolio-item-inner"> <img class="img-responsive" src="images/uni-events/04.jpg" alt="">
+              <div class="portfolio-info"> <a class="preview" href="images/uni-events/04.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+                <h6>Zoom In</h6>
+              </div>
+            </div>
+          </div>
+          <!--/.portfolio-item-->
+        </div>
+      </div>
+    </section>
+    <!--Pricing-Section-Start-->
+    <section id="pricing">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="heading">
+            <h2>CLUB <span>FEES</span></h2>
+            <div class="line"></div>
+            <p>"<span><strong>B</strong></span>e a student of success, learn everything you can from those who have been the most successful"</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
+              <ul class="pricing">
+                <li class="plan-header">
+                  <div class="price-duration">
+                    <div class="price"> ₹150/- </div>
+                    <div class="duration"> per year </div>
+                  </div>
+                  <div class="plan-name"> Staccatos </div>
+                </li>
+                <li><strong>1 YEAR MEMBERSHIP</strong></li>
+                <li><strong>PROFESSIONAL BATCH</strong></li>
+                <li><strong>TRAINING SESSIONS</strong></li>
+                <li><a class="btn-order" href="/clubRegistration">Register Now</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="200ms">
+              <ul class="pricing">
+                <li class="plan-header">
+                  <div class="price-duration">
+                    <div class="price"> ₹500 </div>
+                    <div class="duration"> per year </div>
+                  </div>
+                  <div class="plan-name"> HC </div>
+                </li>
+                <li><strong>1 YEAR MEMBERSHIP</strong></li>
+                <li><strong>BRANDED T-SHIRTS</strong></li>
+                <li><strong>HOSTEL MANAGEMENT</strong></li>
+                <li><a class="btn-order" href="#">Register Now</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="400ms">
+              <ul class="pricing">
+                <li class="plan-header">
+                  <div class="price-duration">
+                    <div class="price"> ₹100 </div>
+                    <div class="duration"> per year </div>
+                  </div>
+                  <div class="plan-name"> CUT-C </div>
+                </li>
+                <li><strong>1 YEAR MEMBERSHIP</strong></li>
+                <li><strong>THEATRICS</strong></li>
+                <li><strong>NUKKAD NATAK</strong></li>
+                <li><a class="btn-order" href="#">Register Now</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
+              <ul class="pricing">
+                <li class="plan-header">
+                  <div class="price-duration">
+                    <div class="price"> ₹500 </div>
+                    <div class="duration"> per year </div>
+                  </div>
+                  <div class="plan-name"> CU-Arcs </div>
+                </li>
+                <li><strong>1 YEAR MEMBERSHIP</strong></li>
+                <li><strong>BRANDED T-SHIRTS</strong></li>
+                <li><strong>ACCESS TO SPORTS ARENA</strong></li>
+                <li><a class="btn-order" href="#">Register Now</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
+              <ul class="pricing">
+                <li class="plan-header">
+                  <div class="price-duration">
+                    <div class="price"> ₹150 </div>
+                    <div class="duration"> per year </div>
+                  </div>
+                  <div class="plan-name"> Euphony </div>
+                </li>
+                <li><strong>1 YEAR MEMBERSHIP</strong></li>
+                <li><strong>MUSIC WORKSHOPS</strong></li>
+                <li><strong>MEMBERSHIP BONUSES</strong></li>
+                <li><a class="btn-order" href="#">Register Now</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
+              <ul class="pricing">
+                <li class="plan-header">
+                  <div class="price-duration">
+                    <div class="price"> ₹100 </div>
+                    <div class="duration"> per year </div>
+                  </div>
+                  <div class="plan-name"> Maths Pirates </div>
+                </li>
+                <li><strong>1 YEAR MEMBERSHIP</strong></li>
+                <li><strong>EVENING SESSIONS</strong></li>
+                <li><strong>FUN ACTIVITIES</strong></li>
+                <li><a class="btn-order" href="#">Register Now</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
+              <ul class="pricing">
+                <li class="plan-header">
+                  <div class="price-duration">
+                    <div class="price"> ₹100 </div>
+                    <div class="duration"> per year </div>
+                  </div>
+                  <div class="plan-name"> SUFY </div>
+                </li>
+                <li><strong>1 YEAR MEMBERSHIP</strong></li>
+                <li><strong>DEBATES</strong></li>
+                <li><strong>QUIZZES</strong></li>
+                <li><a class="btn-order" href="#">Register Now</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
+              <ul class="pricing">
+                <li class="plan-header">
+                  <div class="price-duration">
+                    <div class="price"> ₹350 </div>
+                    <div class="duration"> per year </div>
+                  </div>
+                  <div class="plan-name"> CSI </div>
+                </li>
+                <li><strong>1 YEAR MEMBERSHIP</strong></li>
+                <li><strong>HACKATHONS</strong></li>
+                <li><strong>NATIONAL LEVEL CERTIFICATES</strong></li>
+                <li><a class="btn-order" href="#">Register Now</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
+              <ul class="pricing">
+                <li class="plan-header">
+                  <div class="price-duration">
+                    <div class="price"> ₹100 </div>
+                    <div class="duration"> per year </div>
+                  </div>
+                  <div class="plan-name"> Asclepius </div>
+                </li>
+                <li><strong>1 YEAR MEMBERSHIP</strong></li>
+                <li><strong>PHARMACEUTICAL DOMAIN</strong></li>
+                <li><strong>FUN EVENTS</strong></li>
+                <li><a class="btn-order" href="#">Register Now</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
+              <ul class="pricing">
+                <li class="plan-header">
+                  <div class="price-duration">
+                    <div class="price"> ₹100 </div>
+                    <div class="duration"> per year </div>
+                  </div>
+                  <div class="plan-name"> Reader's Club </div>
+                </li>
+                <li><strong>1 YEAR MEMBERSHIP</strong></li>
+                <li><strong>SEMINARS</strong></li>
+                <li><strong>GROUP SESSIONS</strong></li>
+                <li><a class="btn-order" href="#">Register Now</a> </li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!--Team-Section-Start-->
+    <section id="team">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="heading">
+            <h2>OUR <span>TEAM</span></h2>
+            <div class="line"></div>
+            <p><span><strong>"I</strong></span>f your actions inspire others to dream more, learn more, do more and become more, you are a leader.”</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s" data-wow-delay=".1s">
+            <div class="team-sec">
+              <div class="team-img"> <img src="images/Team/cs-1.jpg" class="img-responsive" alt="">
+                <div class="team-desc">
+                  <h5>ASEEM ARORA</h5>
+                  <p>CULTURAL SECRETARY</p>
+                  <ul class="team-social-icon">
+                    <li><a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://instagram.com/aseemarora11?igshid=YmMyMTA2M2Y= " data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s" data-wow-delay=".2s">
+            <div class="team-sec">
+              <div class="team-img"> <img src="images/Team/cs-2.jpg" class="img-responsive" alt="">
+                <div class="team-desc">
+                  <h5>PRANAV MAHAJAN</h5>
+                  <p>CULTURAL SECRETARY</p>
+                  <ul class="team-social-icon">
+                    <li><a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://instagram.com/pranav_o_i_d?igshid=YmMyMTA2M2Y=" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s" data-wow-delay=".3s">
+            <div class="team-sec">
+              <div class="team-img"> <img src="images/Team/ts.jpg" class="img-responsive" alt="">
+                <div class="team-desc">
+                  <h5>VINAY</h5>
+                  <p>TECHNICAL SECRETARY</p>
+                  <ul class="team-social-icon">
+                    <li><a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://instagram.com/v_05_02?igshid=YmMyMTA2M2Y=" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 team-main-sec wow slideInUp" data-wow-duration="1s" data-wow-delay=".4s">
+            <div class="team-sec">
+              <div class="team-img"> <img src="images/Team/ss.jpg" class="img-responsive" alt="">
+                <div class="team-desc">
+                  <h5>ARYAN MALHOTRA</h5>
+                  <p>SPORTS SECRETARY</p>
+                  <ul class="team-social-icon">
+                    <li><a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://instagram.com/_._aryan.malhotra_._?igshid=YmMyMTA2M2Y=" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Testimonials-Section-Start-->
+    <section id="testimonials" class="parallex">
+      <div class="container">
+        <div class="quote"> <i class="fa fa-quote-left"></i> </div>
+        <div class="clearfix"></div>
+        <div class="slider-text">
+          <div id="owl-testi" class="owl-carousel owl-theme">
+            <div class="item">
+              <div  class="col-md-10 col-md-offset-1"> <img src="images/Testimonials/02.jpg" class="img-circle" alt="">
+                <h5>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.</h5>
+                <h6>EMA JOHNSON</h6>
+                <p>Web Developer</p>
+              </div>
+            </div>
+            <div  class="col-md-10 col-md-offset-1"> <img src="images/Testimonials/03.jpg" class="img-circle" alt="">
+              <h5>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur</h5>
+              <h6>SAM DEEN</h6>
+              <p>Web Designer</p>
+            </div>
+            <div  class="col-md-10 col-md-offset-1"> <img src="images/Testimonials/04.jpg" class="img-circle" alt="">
+              <h5>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas</h5>
+              <h6>JOHN DOE</h6>
+              <p>CEO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Fun-Facts-Section-Start-->
+    <!-- <section id="fun-facts">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <div class="fun-fact text-center">
+              <h3><i class="fa fa-thumbs-o-up"></i> <span class="timer">365</span></h3>
+              <h6>Happy Clients</h6>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="fun-fact text-center">
+              <h3><i class="fa fa-briefcase fa-6"></i> <span class="timer">73987</span></h3>
+              <h6>Completed Projects</h6>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="fun-fact text-center">
+              <h3><i class="fa fa-coffee"></i> <span class="timer">297345</span></h3>
+              <h6>Cups of Coffee</h6>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="fun-fact text-center">
+              <h3><i class="fa fa-code"></i> <span class="timer">9823686</span></h3>
+              <h6>Lines of Code</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!--Blog-Section-Start-->
+    <section id="blog">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="heading">
+            <h2>LATEST BL<span>OG</span></h2>
+            <div class="line"></div>
+            <p><span><strong>L</strong></span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+              et dolore magna aliqua. Ut enim ad minim veniam</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-4 blog-sec">
+              <div class="blog-info"> <img src="images/Blog/1.jpg" class="img-responsive" alt="">
+                <div class="data-meta">
+                  <h4>Jan</h4>
+                  <strong>10</strong><br>
+                  2016 </div>
+                <a href="#">
+                <h5>Sed ut perspiciatis unde omnis</h5>
+                </a>
+                <ul class="blog-icon">
+                  <li><i class="fa fa-pencil"></i><a href="#">
+                    <h6>John</h6>
+                    </a></li>
+                  <li class="comment"><i class="fa fa-comment"></i><a href="#">
+                    <h6>13</h6>
+                    </a></li>
+                </ul>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.</p>
+                <a href="#" class="btn-blg">Read More</a> </div>
+            </div>
+            <div class="col-md-4 blog-sec">
+              <div class="blog-info"> <img src="images/Blog/2.jpg" class="img-responsive" alt="">
+                <div class="data-meta">
+                  <h4>Jan</h4>
+                  <strong>20</strong><br>
+                  2016 </div>
+                <a href="#">
+                <h5>Sed ut perspiciatis unde omnis</h5>
+                </a>
+                <ul class="blog-icon">
+                  <li><i class="fa fa-pencil"></i><a href="#">
+                    <h6>Maria</h6>
+                    </a></li>
+                  <li class="comment"><i class="fa fa-comment"></i><a href="#">
+                    <h6>04</h6>
+                    </a></li>
+                </ul>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.</p>
+                <a href="#" class="btn-blg">Read More</a> </div>
+            </div>
+            <div class="col-md-4 blog-sec">
+              <div class="blog-info"> <img src="images/Blog/3.jpg" class="img-responsive" alt="">
+                <div class="data-meta">
+                  <h4>Jan</h4>
+                  <strong>31</strong><br>
+                  2016 </div>
+                <a href="#">
+                <h5>Sed ut perspiciatis unde omnis</h5>
+                </a>
+                <ul class="blog-icon">
+                  <li><i class="fa fa-pencil"></i><a href="#">
+                    <h6>Bear</h6>
+                    </a></li>
+                  <li class="comment"><i class="fa fa-comment"></i><a href="#">
+                    <h6>05</h6>
+                    </a></li>
+                </ul>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.</p>
+                <a href="#" class="btn-blg">Read More</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Client-Section-Start-->
+    <div id="client">
+      <div class="container">
+        <div id="client-slider" class="owl-carousel">
+          <div class="item client-logo"> <a href="#"><img src="images/Logo/staccatos.jpg" class="img-responsive logo-blur" alt=""/></a> </div>
+          <div class="item client-logo"> <a href="#"><img src="images/Logo/hc.jpg" class="img-responsive logo-blur" alt=""/></a> </div>
+          <div class="item client-logo"> <a href="#"><img src="images/Logo/cutC.jpg" class="img-responsive logo-blur" alt=""/></a> </div>
+          <div class="item client-logo"> <a href="#"><img src="images/Logo/cuArcs.jpg" class="img-responsive logo-blur" alt=""/></a> </div>
+          <div class="item client-logo"> <a href="#"><img src="images/Logo/euphony.jpg" class="img-responsive logo-blur" alt=""/></a> </div>
+          <div class="item client-logo"> <a href="#"><img src="images/Logo/math.jpg" class="img-responsive logo-blur" alt=""/></a> </div>
+          <div class="item client-logo"> <a href="#"><img src="images/Logo/sufy.jpg" class="img-responsive logo-blur" alt=""/></a> </div>
+          <div class="item client-logo"> <a href="#"><img src="images/Logo/csi.jpg" class="img-responsive logo-blur" alt=""/></a> </div>
+          <div class="item client-logo"> <a href="#"><img src="images/Logo/asclepius.jpg" class="img-responsive logo-blur" alt=""/></a> </div>
+          <div class="item client-logo"> <a href="#"><img src="images/Logo/readers.jpg" class="img-responsive logo-blur" alt=""/></a> </div>
+          <div class="item client-logo"> <a href="#"><img src="images/Logo/toastmasters.jpg" class="img-responsive logo-blur" alt=""/></a> </div>
+          <div class="item client-logo"> <a href="#"><img src="images/Logo/ncc.jpg" class="img-responsive logo-blur" alt=""/></a> </div>
+          <div class="item client-logo"> <a href="#"><img src="images/Logo/nss.jpg" class="img-responsive logo-blur" alt=""/></a> </div>
+          <div class="item client-logo"> <a href="#"><img src="images/Logo/ceed.jpg" class="img-responsive logo-blur" alt=""/></a> </div>
+        </div>
+      </div>
+    </div>
+    <!--Contact-Section-Start-->
+    <!-- <section id="contact">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="heading">
+            <h2>CONTACT <span>US</span></h2>
+            <div class="line"></div>
+            <p><span><strong>L</strong></span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+              et dolore magna aliqua. Ut enim ad minim veniam</p>
+          </div>
+        </div>
+        <div class="text-center">
+          <div class="col-md-6 col-sm-6 contact-sec-1">
+            <h4>CONTACT IN<span>FO</span></h4>
+            <ul class="contact-form">
+              <li><i class="fa fa-map-marker"></i>
+                <h6><strong>Address:</strong> No 123 , Wallstreet, India </h6>
+              </li>
+              <li><i class="fa fa-envelope"></i>
+                <h6><strong>Mail Us:</strong> <a href="#">Info@yourdomain.com</a></h6>
+              </li>
+              <li><i class="fa fa-phone"></i>
+                <h6><strong>Phone:</strong> +91 123-456-7890 </h6>
+              </li>
+              <li><i class="fa fa-wechat"></i>
+                <h6><strong>Website:</strong> <a href="#">www.Cosmix.com</a> </h6>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <form id="main-contact-form" name="contact-form" method="post" action="#">
+              <div class="row  wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" placeholder="Name" required="required">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="Email Address" required="required">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
+              </div>
+              <div class="form-group">
+                <textarea name="message" id="message" class="form-control" rows="4" placeholder="Enter your message" required="required"></textarea>
+              </div>
+              <a class="btn-send col-md-12 col-sm-12 col-xs-12" href="#">Send Now</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <footer id="footer">
+      <div class="bg-sec">
+        <div class="container">
+          <h2>LOOKING FORWARD TO <strong>HEARING </strong>FROM YOU!</h2>
+        </div>
+      </div>
+    </footer>
+    <footer id="footer-down">
+      <h2>Follow Us On</h2>
+      <ul class="social-icon">
+        <li class="facebook hvr-pulse"><a href="https://www.facebook.com/ChitkaraUHP/"><i class="fa fa-facebook-f"></i></a></li>
+        <li class="twitter hvr-pulse"><a href="https://twitter.com/chitkarau?lang=en"><i class="fa fa-twitter"></i></a></li>
+        <li class="linkedin hvr-pulse"><a href="https://www.linkedin.com/company/chitkara-university-himachal-pradesh/?originalSubdomain=in"><i class="fa fa-linkedin"></i></a></li>
+        <li class="google-plus hvr-pulse"><a href="https://www.chitkara.edu.in/"><i class="fa fa-google-plus"></i></a></li>
+        <li class="youtube hvr-pulse"><a href="https://www.youtube.com/c/chitkarauniversity"><i class="fa fa-youtube"></i></a></li>
+        <li class="instagram hvr-pulse"><a href="https://www.instagram.com/chitkarau/?hl=en"><i class="fa fa-instagram"></i></a></li>
+        <li class="behance hvr-pulse"><a href="https://www.behance.net/search/projects?search=chitkara%20university"><i class="fa fa-behance"></i></a></li>
+      </ul>
+      <p> &copy; Copyright 2022 Chitkara University - Created By : <a href="http://templatestock.co" target="_blank">Pranjal Sharma & Aviral Jayant Patel</a> </p>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+<!--Boostrap-Jquery-->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!--Preetyphoto-Jquery-->
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<!--NiceScroll-Jquery-->
+<!-- <script type="text/javascript" src="js/jquery.nicescroll.js"></script> -->
+<!-- <script type="text/javascript" src="js/waypoints.min.js"></script> -->
+<!--Isotopes-->
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<!--Wow-Jquery-->
+<script type="text/javascript" src="js/wow.js"></script>
+<!--Count-Jquey-->
+<script type="text/javascript" src="js/jquery.countTo.js"></script>
+<script type="text/javascript" src="js/jquery.inview.min.js"></script>
+<!--Owl-Crousels-Jqury-->
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<!--Main-Scripts-->
+<script type="text/javascript" src="js/script.js"></script>
+
+<!-- <script type="text/javascript" src="http://stats.hosting24.com/count.php"></script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="navbar">
+
+    <ul>
+        <div><li><a href="#">Home</a></li></div>
+        <div><li><a href="#about">About</a></li></div>
+        <div><li><a href="#club">Clubs</a></li></div>
+        <div><li><a href="#organization">Organizations</a></li></div>
+        <div><li><a href="#organising_head">Organising Heads</a></li></div>
+        <div><li><a href="#contact">Contact</a></li></div>
+        <div>
+            <li>
+                <a href="/user-profile?id=     <%= user._id %>     ">
+                    <img src="userImages/<%= user.image %>" alt="<%= user.image %>" >
+                </a>
+            </li>
+        </div> -->
+        <!-- <div>
+            <li>
+          <select name="settings" id="settings">
+              <option value="options"></option>
+              <option value="profile">My Profile</option>
+              <option value="logout">
+                <a href="/logout">Logout</a>
+              </option>
+            </select>
+        </li>
+        </div> -->
+        
+<!--         
+    </ul>
+    
+</div> -->
+
+
+
+
+
+<% include('../layouts/footer.ejs') %> 

@@ -1,0 +1,64 @@
+<% include('../layouts/header.ejs') %> 
+
+<!-- <h1>Forget</h1> -->
+
+<% 
+    if(typeof message !== 'undefined'){
+        %>
+            <h4><%= message %></h4>
+        <%
+    }
+%> 
+
+<form class="form-1" action="/forget" method="post">
+    <input class="input-1" type="email" name="email" required placeholder="Enter email">
+    <br><br>
+    <input class="input-1" type="submit" value="Send reset link">
+</form>
+
+<% include('../layouts/footer.ejs') %> 
+
+
+
+<% include('../layouts/header.ejs') %> 
+
+
+<link rel="stylesheet" href="css/login.css">
+
+<div class="parent clearfix">
+    <div class="bg-illustration">
+      <img src="https://i.ibb.co/Pcg0Pk1/logo.png" alt="logo">
+    </div>
+    
+    <div class="login">
+      <div class="container">
+        <h1>Forgot Password</h1>
+        
+        <br>
+
+        <% 
+            if(typeof message !== 'undefined'){
+                %>
+                    <h4><%= message %></h4>
+                <%
+            }
+        %> 
+
+      
+        <div class="login-form">
+          <form action="/forget" method="post">
+            <input type="email" name="email" required placeholder="Enter email">
+            <button type="submit" value="Send reset link">Send Reset Link</button>
+            <br>
+            <span class="registeration">Back to  <a href="/login">Login</a></span>
+          </form>
+        </div>
+    
+      </div>
+    </div>
+</div>
+
+
+  
+
+<% include('../layouts/footer.ejs') %> 

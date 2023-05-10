@@ -1,0 +1,41 @@
+<% include('../layouts/header.ejs') %> 
+
+<link rel="stylesheet" href="css/list.css">
+<div class="parent clearfix">
+  <div class="bg-illustration"></div>
+    <div class="login">
+      <div class="container"></div>
+        <h1>Registered Students</h1>
+        <br>
+        <table style="width: 100%">
+            <tr>
+                <th>Name</th>
+                <th>Club</th>
+                <th>Id</th>
+            </tr>
+            <% 
+            if(clubEntries.length > 0){
+              for(let i = 0; i<clubEntries.length; i++){
+                  %>
+                    <tr>
+                      <td><%= clubEntries[i].name %></td>
+                      <td><%= clubEntries[i].clubname %></td>
+                      <td><%= clubEntries[i].roll %></td>
+                    </tr>
+                  <%
+              }
+            }else{
+              %>
+              <tr>
+                  <td colspan="5"><h1>No Registrations till now</h1></td>
+              </tr>
+              <%
+            }
+          %>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+<% include('../layouts/footer.ejs') %> 

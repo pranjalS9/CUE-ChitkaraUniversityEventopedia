@@ -1,0 +1,53 @@
+<% include('../layouts/header.ejs') %> 
+
+
+
+<!-- Style -->
+<link rel="stylesheet" href="css/login.css">
+
+<div class="login-container">
+    <div class="sub-div">
+        <div class="form-heading">
+            <h1>Login</h1>
+        </div>
+        <div class="login-form">
+            <% 
+                if(typeof message !== 'undefined'){
+                    %>
+                        <h4><%= message %></h4>
+                    <%
+                }
+            %> 
+    
+            <form action="/login" method="post">
+                <label for="email">Email &nbsp &nbsp &nbsp &nbsp &nbsp</label>
+                <input type="email" name="email" id="email" required placeholder="Enter email">
+                <br><br>
+                <label for="password">Password &nbsp &nbsp</label>
+                <input type="password" name="password" id="password" required placeholder="Enter password">
+                <br><br>
+                <div class="rememberNforgot">
+                    <div class="remember">
+                        <input type="checkbox" value="remember" name="remember">
+                        <label for="remember">Remember Me</label>
+                    </div>
+                    <div class="forgot">
+                        <a href="/forget">Forgot Password</a>
+                    </div>
+                </div>
+                <br>
+                
+                <input type="submit" value="login">
+            </form>
+            <div class="registeration">
+                <span class="register-link">New User? </span><a href="/register">Register Here</a>    
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+<!--verification-->
+
+<% include('../layouts/footer.ejs') %> 
